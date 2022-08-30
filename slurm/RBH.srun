@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --account=bgmp
+#SBATCH --partition=bgmp
+#SBATCH --job-name=RBH
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
+#SBATCH --output=RBH_%j.out
+#SBATCH --error=RBH_%j.err
+
+/usr/bin/time -v /projects/bgmp/bmeluch/bioinfo/Bi623/PS/PS1/RBH.py
