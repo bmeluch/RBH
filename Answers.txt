@@ -1,0 +1,12 @@
+To turn in your work for this assignment, do the following:
+Please turn in your sort command (if you used one),
+your Human_Zebrafish_RBH.tsv file, and all python code to Canvas.
+Be sure to document what you’ve done in your lab notebook. You’ll be using this output in a future assignment.
+
+(base) [bmeluch@talapas-ln1 PS1]$ sort -k1,1 -k11g,11 
+    /projects/bgmp/bmeluch/bioinfo/Bi621/PS/ps7-bmeluch/results/humanp_to_zfishdb.tsv > 
+    /projects/bgmp/bmeluch/bioinfo/Bi623/PS/PS1/blastp_output_sorted/h_to_zdb_sort.tsv
+    
+(base) [bmeluch@talapas-ln1 blastp_output_sorted]$ sort -k1,1 -k11g,11 
+    /projects/bgmp/bmeluch/bioinfo/Bi621/PS/ps7-bmeluch/results/zfishp_to_humandb.tsv > 
+    /projects/bgmp/bmeluch/bioinfo/Bi623/PS/PS1/blastp_output_sorted/z_to_hdb_sort.tsv
