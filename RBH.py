@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
+# Bi623 - Human and Zebrafish Reciprocal Best Hits
+# Using longest protein data from Bi621 Problem Set 7
 # VARIABLE NAMES: h/human or z/zfish indicate the QUERY, database is the other 
-
-#################### FUNCTIONS ####################
 
 def mart_dict(fname: str):
     '''
@@ -62,8 +62,6 @@ def best_hit_filter(sorted_path: str) -> dict:
     return best_hits
 
 
-#################### READ IN FILES ####################
-
 # Create lookup tables from biomart export files.
 h_mart: str = "/projects/bgmp/bmeluch/bioinfo/Bi621/PS/ps7-bmeluch/biomart_export/human_mart_expt.txt"
 z_mart: str = "/projects/bgmp/bmeluch/bioinfo/Bi621/PS/ps7-bmeluch/biomart_export/zebrafish_mart_expt.txt"
@@ -78,8 +76,6 @@ z_sort_path = "/projects/bgmp/bmeluch/bioinfo/Bi623/PS/PS1/blastp_output_sorted/
 h_best_hits: dict = best_hit_filter(h_sort_path)
 z_best_hits: dict = best_hit_filter(z_sort_path)
 
-
-#################### RECIPROCAL BEST HITS ####################
 
 # Create empty dictionary for reciprocal best hits.
 # Key = human protID, value = zfish protID
